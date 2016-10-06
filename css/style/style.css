@@ -33,6 +33,9 @@ body {
   margin-left: .2em;
 }
  
+.icon-nerd {
+    font-family: "symbols-nerds";
+}
 
 .icon-basket:before { content: '\62'; } /* 'b' */
 .icon-facebook:before { content: '\66'; } /* 'f' */
@@ -84,10 +87,21 @@ p,h1,h2,h3.h4 {
   float: left;
 }
 
+
 .basket {
   margin-top: 55px;
   padding-left: 45px;
   float: right;
+  position: relative;
+}
+
+.basket:before {
+  content: 'b';
+  font-family: "symbols-nerds";
+  text-transform: none; 
+  position: absolute;
+  left: 30px;
+  opacity: .3;
 }
 
 .main-nav ul {
@@ -108,8 +122,15 @@ p,h1,h2,h3.h4 {
   text-decoration: none;
 }
 
-.slider {
+.slider-box {
+  height: 310px;
   background: #eeeeee;
+}
+
+.slider {
+  width: 880px;
+  height: 310px;
+  overflow: hidden;
 }
 
 .features {
