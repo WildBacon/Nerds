@@ -1,6 +1,53 @@
 body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   min-width: 900px;
 }
+
+/*icon-font-block*/
+
+ @font-face {
+  font-family: 'symbols-nerds';
+  src: url('../font/symbols-nerds.eot?94604853');
+  src: url('../font/symbols-nerds.eot?94604853#iefix') format('embedded-opentype'),
+       url('../font/symbols-nerds.woff?94604853') format('woff'),
+       url('../font/symbols-nerds.ttf?94604853') format('truetype'),
+       url('../font/symbols-nerds.svg?94604853#symbols-nerds') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "symbols-nerds";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  margin-left: .2em;
+}
+ 
+
+.icon-basket:before { content: '\62'; } /* 'b' */
+.icon-facebook:before { content: '\66'; } /* 'f' */
+.icon-twitter:before { content: '\74'; } /* 't' */
+.icon-vk:before { content: '\76'; } /* 'v' */
+.icon-up-dir:before { content: '\25b2'; } /* '▲' */
+.icon-down-dir:before { content: '\25bc'; } /* '▼' */
+.icon-circle:before { content: '\25cb'; } /* '○' */
+.icon-circle-dot:before { content: '\25cf'; } /* '●' */
+.icon-check-off:before { content: '\2610'; } /* '☐' */
+.icon-check-on:before { content: '\2611'; } /* '☑' */
+.icon-instagramm:before { content: '📷'; } /* '\1f4f7' */
+
+/*end of icon-font-block*/
+
 
 .container {
   width: 880px;
@@ -26,6 +73,10 @@ p,h1,h2,h3.h4 {
 }
 
 .main-nav {
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  background: #eeeeee;
 }
 
 .logo {
@@ -35,6 +86,7 @@ p,h1,h2,h3.h4 {
 
 .basket {
   margin-top: 55px;
+  padding-left: 45px;
   float: right;
 }
 
@@ -48,11 +100,16 @@ p,h1,h2,h3.h4 {
   display: inline-block;
   vertical-align: top;
   float: right;
+  margin-right: 45px;
 }
 
+.main-nav a {
+  color: #000;
+  text-decoration: none;
+}
 
 .slider {
-  
+  background: #eeeeee;
 }
 
 .features {
