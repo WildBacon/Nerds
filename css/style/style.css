@@ -126,6 +126,7 @@ p,h1,h2,h3.h4 {
 
 .slider-box {
   background: #eeeeee;
+  position: relative;
 }
 
 .slider {
@@ -145,7 +146,7 @@ p,h1,h2,h3.h4 {
   z-index: 1000;
 }
 
-.slider-control i {
+.slider-control label {
   display: inline-block;
   vertical-align: top;
   width: 4px;
@@ -157,16 +158,25 @@ p,h1,h2,h3.h4 {
   cursor: pointer;
 }
 
-.slider-control .active {
+.slider-box input[type=radio] {
+  /*
+  position: absolute;
+  opacity: 0;
+  */
+}
+
+#btn-1:checked ~ .slider-control label[for="btn-1"],
+#btn-2:checked ~ .slider-control label[for="btn-2"],
+#btn-3:checked ~ .slider-control label[for="btn-3"] {
   background: #c1c1c1;
 }
 
 .slider-text {
-  width: 380px;
   padding: 30px 0;
 }
 
 .slider-text h2 {
+  font-weight: 500;
   font-size: 36px;
   line-height: 36px;
   margin-bottom: 18px;
@@ -184,16 +194,20 @@ p,h1,h2,h3.h4 {
   line-height: 18px;
   font-family: 'Roboto', 'Arial', sans-serif;
   color: #fff;
-  background: #000;
   padding: 10px 40px;
   border-radius: 3px;
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
-  
+}
+
+.slider-text .btn {
+  background: #fb565a;
+  padding: 10px 70px;
 }
 
 .slide {
+  display: none;
   position: absolute;
   left: 0;
   top: 0;
@@ -202,17 +216,20 @@ p,h1,h2,h3.h4 {
   overflow: hidden;
 }
 
-.slide:nth-child(1) {
+.slide:nth-child(2) {
   display: block;
+}
+
+.slide:nth-child(1) {
   background: url(../../img/gadgets.png) no-repeat 540px 10px;
 }
 
 .slide:nth-child(2) {
-  display: none;
+  background: url(../../img/calculator.png) no-repeat 640px 15px;
 }
 
 .slide:nth-child(3) {
-  display: none;
+  background: url(../../img/robot.png) no-repeat 540px 0px;
 }
 
 
