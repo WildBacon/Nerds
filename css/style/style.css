@@ -159,10 +159,8 @@ p,h1,h2,h3.h4 {
 }
 
 .slider-box input[type=radio] {
-  /*
   position: absolute;
   opacity: 0;
-  */
 }
 
 #btn-1:checked ~ .slider-control label[for="btn-1"],
@@ -216,10 +214,6 @@ p,h1,h2,h3.h4 {
   overflow: hidden;
 }
 
-.slide:nth-child(2) {
-  display: block;
-}
-
 .slide:nth-child(1) {
   background: url(../../img/gadgets.png) no-repeat 540px 10px;
 }
@@ -231,6 +225,13 @@ p,h1,h2,h3.h4 {
 .slide:nth-child(3) {
   background: url(../../img/robot.png) no-repeat 540px 0px;
 }
+
+#btn-1:checked ~ .slider .slide:nth-child(1),
+#btn-2:checked ~ .slider .slide:nth-child(2),
+#btn-3:checked ~ .slider .slide:nth-child(3) {
+  display: block;
+}
+
 
 
 .features {
