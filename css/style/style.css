@@ -1,11 +1,3 @@
-body {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  min-width: 900px;
-}
-
-/*icon-font-block*/
-
  @font-face {
   font-family: 'symbols-nerds';
   src: url('../font/symbols-nerds.eot?94604853');
@@ -17,40 +9,11 @@ body {
   font-style: normal;
 }
 
- [class^="icon-"]::before, [class*=" icon-"]::before {
-  font-family: "symbols-nerds";
-  font-style: normal;
-  font-weight: normal;
-  speak: none;
-  display: inline-block;
-  text-decoration: inherit;
-  width: 1em;
-  margin-right: .2em;
-  text-align: center;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1em;
-  margin-left: .2em;
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  min-width: 900px;
 }
- 
-.icon-nerd {
-    font-family: "symbols-nerds";
-}
-
-.icon-basket:before { content: '\62'; } /* 'b' */
-.icon-facebook:before { content: '\66'; } /* 'f' */
-.icon-twitter:before { content: '\74'; } /* 't' */
-.icon-vk:before { content: '\76'; } /* 'v' */
-.icon-up-dir:before { content: '\25b2'; } /* '▲' */
-.icon-down-dir:before { content: '\25bc'; } /* '▼' */
-.icon-circle:before { content: '\25cb'; } /* '○' */
-.icon-circle-dot:before { content: '\25cf'; } /* '●' */
-.icon-check-off:before { content: '\2610'; } /* '☐' */
-.icon-check-on:before { content: '\2611'; } /* '☑' */
-.icon-instagramm:before { content: '📷'; } /* '\1f4f7' */
-
-/*end of icon-font-block*/
-
 
 .container {
   width: 880px;
@@ -82,18 +45,18 @@ p,h1,h2,h3,h4 {
   line-height: 30px;
   text-transform: uppercase;
   background: #eeeeee;
-  padding-bottom: 40px;
 }
 
 .logo {
   margin-top: 30px;
   float: left;
   display: block;
+  height: 56px;
 }
 
 .main-nav ul {
   font-size: 0;
-  margin-top: 65px;
+  margin-top: 64px;
   width: 620px;
   float: right;
 }
@@ -165,8 +128,10 @@ p,h1,h2,h3,h4 {
 }
 
 .slider-box {
+  padding-top: 55px;
   background: #eeeeee;
   position: relative;
+  
 }
 
 .slider {
@@ -240,13 +205,18 @@ p,h1,h2,h3,h4 {
   background: #fb565a;
 }
 
-
 .btn:hover {
   cursor: pointer;
+  background: #d6494d;
+}
+
+.btn:active {
+  background: #b63538;
+  box-shadow: 0 3px rgba(0,0,0,.15) inset ;
 }
 
 .slider-text .btn {
-  padding: 10px 70px;
+  padding: 12px 70px;
 }
 
 .slide {
@@ -276,8 +246,6 @@ p,h1,h2,h3,h4 {
 #btn-3:checked ~ .slider .slide:nth-child(3) {
   display: block;
 }
-
-
 
 .features {
   margin-top: 80px;
@@ -323,14 +291,28 @@ p,h1,h2,h3,h4 {
   margin-bottom: 25px;
 }
 
-
-
 .btn-green {
   background: #00ca74;
 }
+
+.btn-green:hover {
+  background: #01a25e;
+}
+
+.btn-green:active {
+  background: #009053;
+}
+
 .btn-yellow {
   background: #efc84a;
-  
+}
+
+.btn-yellow:hover {
+  background: #d6ae2c;
+}
+
+.btn-yellow:active {
+  background: #c09b24;
 }
 
 .about-us {
@@ -467,10 +449,25 @@ p,h1,h2,h3,h4 {
   opacity: 1;
 }
 
-
 .partner:last-child {
   margin-right: 0;
 }
+
+/* catalog */
+
+.welcome-block {
+  padding: 65px 0 85px 0;
+}
+
+
+.welcome-block h1 {
+  font-size: 40px;
+  line-height: 56px;
+  font-weight: 300;
+  text-align: center;
+}
+
+/*end of catalog*/
 
 .map {
   height: 416px;
@@ -539,6 +536,15 @@ p,h1,h2,h3,h4 {
   display: inline-block;
   vertical-align: top;
   position: relative;
+}
+
+.social-btn:hover {
+  background: #fb565a
+}
+
+.social-btn:active {
+  background: #d6494d;
+  box-shadow: 0 3px rgba(0,0,0,.15) inset ;
 }
 
 .social-btn::after {
