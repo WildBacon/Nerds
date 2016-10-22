@@ -342,7 +342,7 @@ p,h1,h2,h3,h4 {
 .about-column-right h4{
   font-weight: 500;
   text-transform: uppercase;
-  margin-top: 45px;
+  margin-top: 50px;
 }
 
 .list-item {
@@ -467,6 +467,84 @@ p,h1,h2,h3,h4 {
   text-align: center;
 }
 
+.left-column {
+  width: 240px;
+  float: left;
+  margin-right: 80px;
+}
+
+.right-column {
+  width: 560px;
+  float: right;
+}
+
+.filter {
+  
+  margin-top: 30px;/*!!!!!*/
+    
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 300;
+  text-transform: uppercase;
+  
+  width: 240px;
+}
+
+.range-control {
+  position: relative;
+  height: 80px;
+  padding: 0px 20px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  background: #f1f1f1;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.scale {
+  height: 2px;
+  margin-top: 39px;
+  background: #d7dcde;
+}
+
+.bar {
+  height: 2px;
+  background: #00ca74;
+}
+
+.toggle {
+  display: inline-block;
+  height: 4px;
+  width: 4px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  background: #ababab;
+  box-shadow: 0 2px rgba(0,0,0,.14);
+  cursor: pointer;
+  position: absolute;
+  top: 30px;
+  left: 20px;
+}
+
+.max-toggle {
+  left: 145px;
+}
+
+.price-control input {
+  outline: none;
+  width: 60px;
+  padding: 8px 10px;
+  margin-left: 10px;
+  margin-right: 1px;;
+  border: none;
+  text-align: center;
+  background: #f1f1f1;
+  border-radius: 3px; 
+}
+
+.price-control input:last-child {
+  margin-right: 0;
+}
 /*end of catalog*/
 
 .map {
