@@ -467,22 +467,15 @@ p,h1,h2,h3,h4 {
   text-align: center;
 }
 
-.left-column {
+.global-filter {
   width: 240px;
   float: left;
+  margin-top: 50px;
   margin-right: 80px;
   margin-bottom: 300px;
 }
 
-.right-column {
-  width: 560px;
-  float: right;
-}
-
-.filter {
-  margin-bottom: 45px;
-  margin-top: 30px;/*!!!!!*/
-    
+.price-filter {
   font-size: 16px;
   line-height: 22px;
   font-weight: 300;
@@ -558,6 +551,16 @@ p,h1,h2,h3,h4 {
   text-align: center;
   color: #283136;
   }
+  
+
+.catalog-block {
+  margin-top: 50px;
+  width: 560px;
+  float: right;
+}
+
+
+
 
 /*end of catalog*/
 

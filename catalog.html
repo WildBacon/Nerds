@@ -35,26 +35,88 @@
   </header>
   
   <div class="container clearfix">
-    <div class="left-column">
-      <div class="filter">
-       <div class="range-control">
-         <div class="scale">
-           <div class="bar" style=" margin-left: 10px; margin-right: 65px;"></div>
+    <section class="global-filter">
+      <h2>Стоимость</h2>
+      <form action="echo" method="post">
+        <div class="price-filter">
+         <div class="range-control">
+           <div class="scale">
+             <div class="bar" style=" margin-left: 10px; margin-right: 65px;"></div>
+           </div>
+           <div class="toggle min-toggle"></div>
+           <div class="toggle max-toggle"></div>
          </div>
-         <div class="toggle min-toggle"></div>
-         <div class="toggle max-toggle"></div>
-       </div>
-       <div class="price-control">
-         <label for="min-price">от<input type="text" name="min-price" id="min-price" value="0"></label>
-         <label for="max-price">до<input type="text" name="max-price" id="max-price" value="15000"></label>
-       </div>
-      </div>
-    </div>
-    <div class="right-column">
-        <div class="sort-panel"></div>
+         <div class="price-control">
+           <label for="min-price">от<input type="text" name="min-price" id="min-price" value="0"></label>
+           <label for="max-price">до<input type="text" name="max-price" id="max-price" value="15000"></label>
+         </div>
+        </div>
+        <div class="grid-block">
+          <h3 class="grid-header">Сетка:</h3>
+          <ul>
+            <li class="choice-list">
+              <label for="adaptive">
+              <input type="radio" name="grid" value="adaptive" id="adaptive"   checked>
+              Адаптивная</label>
+            </li>
+            <li class="choice-list">
+              <label for="rubber">
+              <input type="radio" name="grid" value="rubber" id="rubber">
+              Резиновая</label>
+            </li>
+            <li class="choice-list">
+              <label for="fixed">
+              <input type="radio" name="grid" value="fixed" id="fixed">
+              Фиксированная</label>
+            </li>
+          </ul>
+        </div>
+        <div class="features-block">
+          <h3 class="features-header">Особенности:</h3>
+          <ul>
+            <li class="choice-list">
+              <label for="slider">
+              <input type="checkbox" name="slider" value="slider" id="slider"  checked>
+              Слайдер</label>
+            </li>  
+            <li class="choice-list">  
+              <label for="advantages">
+              <input type="checkbox" name="advantages" value="advantages" id="advantages">
+              Блок преимуществ</label>
+            </li>  
+            <li class="choice-list">  
+              <label for="news">
+              <input type="checkbox" name="news" value="news" id="news" checked>
+              Новости</label>
+            </li>  
+            <li class="choice-list">  
+              <label for="gallery">
+              <input type="checkbox" name="gallery" value="gallery" id="gallery">
+              Галерея</label>
+            </li>  
+            <li class="choice-list">  
+              <label for="basket">
+              <input type="checkbox" name="basket" value="basket" id="basket">
+              Корзина</label>
+            </li>  
+          </ul>
+        </div>
+      </form>
+    </section>
+    
+    <section class="catalog-block">
+        <div class="sort-panel">
+          <span>Сортировать:</span>
+          <a href="">По цене</a>
+          <a href="">По типу</a>
+          <a href="">По функциональности</a>
+          <div class="arrow arrow-down"></div>
+          <div class="arrow arrow-up"></div>
+          
+        </div>
         <div class="catalog-content"></div>
         <div class="paginator"></div>
-      </div>
+      </section>
   </div>
   
   
