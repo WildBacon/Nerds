@@ -457,6 +457,7 @@ p,h1,h2,h3,h4 {
 
 .welcome-block {
   padding: 65px 0 85px 0;
+  margin-bottom: 75px;
 }
 
 
@@ -470,9 +471,18 @@ p,h1,h2,h3,h4 {
 .global-filter {
   width: 240px;
   float: left;
-  margin-top: 50px;
   margin-right: 80px;
   margin-bottom: 300px;
+}
+
+.global-filter > h2,
+.features-header,
+.grid-header {
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  
+  margin-bottom: 18px;
 }
 
 .price-filter {
@@ -482,6 +492,7 @@ p,h1,h2,h3,h4 {
   text-transform: uppercase;
   
   width: 240px;
+  margin-bottom: 45px;
 }
 
 .range-control {
@@ -550,15 +561,99 @@ p,h1,h2,h3,h4 {
   
   text-align: center;
   color: #283136;
-  }
+}
+
+.grid-block {
+  margin-bottom: 50px;
+}
+
+.grid-block label,
+.features-block label {
+  cursor: pointer;
+  position: relative;
+}
+
+.choice-list {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 300;
+  color: #283136;
   
+  margin-bottom: 20px;
+}
+
+.choice-list span {
+  padding-left: 15px;
+}
+
+.grid-block input,
+.features-block input {
+  visibility: hidden;
+}
+
+.features-block label::before,
+.grid-block label::before {
+  content: '\25cb';
+  font-family: symbols-nerds;
+  font-size: 28px;
+  line-height: 20px;
+  color: #c1c1c1;
+  position: absolute;
+  display: block;
+  top: 0;
+  height: 22px;
+  width: 22px;
+}
+
+.features-block label::before {
+  content: '\2610';
+}
+
+.features-block label:hover::before,
+.grid-block label:hover::before {
+  color: #b5b5b5;
+}
+
+.features-block label:hover,
+.grid-block label:hover {
+  color: #000;
+}
+
+.grid-block input:disabled ~ label::before,
+.grid-block input:disabled ~ label, 
+.features-block input:disabled ~ label::before,
+.features-block input:disabled ~ label {
+  opacity: 0.4
+}
+
+.grid-block input:checked ~ label::before {
+  content: '\25cf';
+}
+
+.features-block input:checked ~ label::before {
+  content: '\2611';
+}
+
+
+
+
+
+
+
+
+
+
 
 .catalog-block {
-  margin-top: 50px;
   width: 560px;
   float: right;
 }
 
+.sort-panel {
+  font-size: 12px;
+  line-height: 30px;
+  margin-bottom: 18px;
+}
 
 
 
