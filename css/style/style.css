@@ -619,6 +619,16 @@ p,h1,h2,h3,h4 {
   color: #000;
 }
 
+.grid-block input:disabled ~ label:hover::before, 
+.features-block input:disabled ~ label:hover::before {
+  color: #c1c1c1;
+}
+
+.grid-block input:disabled ~ label:hover,
+.features-block input:disabled ~ label:hover {
+  color: #283136;
+}
+
 .grid-block input:disabled ~ label::before,
 .grid-block input:disabled ~ label, 
 .features-block input:disabled ~ label::before,
@@ -643,7 +653,6 @@ p,h1,h2,h3,h4 {
 
 
 
-
 .catalog-block {
   width: 560px;
   float: right;
@@ -651,9 +660,119 @@ p,h1,h2,h3,h4 {
 
 .sort-panel {
   font-size: 12px;
-  line-height: 30px;
-  margin-bottom: 18px;
+  line-height: 26px;
+  margin-bottom: 22px;
+  text-transform: uppercase;
+  position: relative;
 }
+
+.sort-panel a{
+  display: inline-block;
+  
+  color: #dddddd;
+  text-decoration: none;
+  margin-left: 40px;
+  border-bottom: 1px dotted #00ca74;
+}
+
+.arrow-up,
+.arrow-down {
+   width: 0px;
+  height: 0px;
+  display: inline-block;
+  vertical-align: baseline;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  cursor: pointer;
+}
+
+
+.arrow-up {
+ 
+  border-bottom: 10px solid #c1c1c1;
+  
+}
+
+.arrow-down {
+
+  border-top: 10px solid #c1c1c1;
+  
+}
+
+.arrow-active {
+  border-color: #00ca74;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+}
+
+.arrow-block {
+  float: right;
+  display: inline-block;
+}
+
+.catalog-content {
+  font-size: 0;
+}
+
+.catalog-item {
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 80px;
+}
+
+.catalog-item:nth-child(2n+1) {
+  margin-right: 80px;
+}
+
+.miniature {
+  padding: 0;
+  margin: 0;
+  height: 240px;
+}
+
+.item-head {
+  width: 240px;
+  height: 30px;
+  position: relative;
+  background: #f1f1f1;
+  border-radius: 3px 3px 0 0;
+}
+
+.item-head i {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border-radius: 50%;
+  top: 10px;
+}
+
+.item-head i:hover {
+  background: #00ca74;
+  cursor: pointer;
+}
+
+i.first {
+  left: 12px;
+}
+i.middle {
+  left: 29px;
+}
+i.last {
+  left: 46px
+}
+
+.item-info {
+  display: none;
+}
+
+
+
+
+
 
 
 
