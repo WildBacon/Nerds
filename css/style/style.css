@@ -644,15 +644,6 @@ p,h1,h2,h3,h4 {
   content: '\2611';
 }
 
-
-
-
-
-
-
-
-
-
 .catalog-block {
   width: 560px;
   float: right;
@@ -666,48 +657,49 @@ p,h1,h2,h3,h4 {
   position: relative;
 }
 
-.sort-panel a{
+.sort-panel a {
   display: inline-block;
-  
   color: #dddddd;
   text-decoration: none;
   margin-left: 40px;
   border-bottom: 1px dotted #00ca74;
 }
 
-.arrow-up,
-.arrow-down {
-   width: 0px;
-  height: 0px;
-  display: inline-block;
-  vertical-align: baseline;
-  border-right: 5px solid transparent;
-  border-left: 5px solid transparent;
-  cursor: pointer;
+.sort-panel a.active,
+.sort-panel a:active {
+  color: #000;
+  border: none;
+}
+
+.sort-panel a:hover {
+  color: #000;
 }
 
 
-.arrow-up {
- 
-  border-bottom: 10px solid #c1c1c1;
-  
-}
-
-.arrow-down {
-
-  border-top: 10px solid #c1c1c1;
-  
-}
-
-.arrow-active {
-  border-color: #00ca74;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-}
 
 .arrow-block {
   float: right;
+}
+
+.arrow {
+  font-family: 'symbols-nerds';
+  font-size: 23px;
+  color: #c1c1c1;
   display: inline-block;
+  vertical-align: baseline;
+  cursor: pointer;
+}
+
+.arrow:hover {
+  color: #b5b5b5;
+}
+.arrow:active {
+  color: #000;
+}
+.arrow.active,
+.arrow.active:hover,
+.arrow.activ:active {
+  color: #00ca74;
 }
 
 .catalog-content {
@@ -770,28 +762,47 @@ i.last {
 }
 
 .paginator {
-  font-size: 12px;
-  line-height: 18px;
-  text-transform: uppercase;
+  font-size: 0;
   margin-bottom: 80px;
 }
 
 .page {
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
   color: #000;
   text-decoration: none;
   display: inline-block;
-  padding: 10px 15px;
+  padding: 10px 16px;
+  margin-right: 10px;
   background: #f1f1f1;
-  border: 2px solid #f1f1f1;
   border-radius: 3px;
-  cursor: pointer;
 }
 
-.page.current {
+.next-page {
+  padding: 10px 30px;
+}
+
+.page:hover {
+  background: #e5e5e5;
+  border-color: #e5e5e5;
+}
+
+.page:active {
+  background: #d5d5d5;
+  box-shadow: 0 3px rgba(0,0,0,0.15) inset;
+}
+
+.page.current,
+.page.current:hover,
+.page.current:active {
   background: #fff;
+  border: 2px solid #f2f2f2;
+  padding: 8px 14px;
+  cursor: default;
+  box-shadow: 0 0;
+  border-radius: 3px;
 }
-
-
 
 /*end of catalog*/
 
