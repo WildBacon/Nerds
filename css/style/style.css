@@ -711,6 +711,7 @@ p,h1,h2,h3,h4 {
   display: inline-block;
   vertical-align: top;
   margin-bottom: 80px;
+  position: relative;
 }
 
 .catalog-item:nth-child(2n+1) {
@@ -759,6 +760,44 @@ i.last {
 
 .item-info {
   display: none;
+  width: 200px;
+  height: 200px;
+  padding: 35px 30px 30px 30px;
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  background: #fff;
+  box-sizing: border-box;
+  cursor: default;
+}
+
+.info-header {
+  font-size: 18px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.info-header + p {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.item-price {
+  font-size: 18px;
+  line-height: 18px;
+  padding: 10px 30px;
+}
+
+.catalog-item:hover .item-info {
+  display: block;
+}
+
+.catalog-item:hover .item-head {
+  background: #797979;
 }
 
 .paginator {
